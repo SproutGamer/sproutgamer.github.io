@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import GameTile from "../components/GameTile.astro";
+---
+
+<Layout title="SproutGamer - About Me">
+  <main>
+    <h1>About Me</h1>
+    <p>
+      Hi! My name is Benji, also known as SproutGamer. I'm a 10 year old boy in
+      primary school. I like coding, Minecraft, engineering, and puzzle games.
+      In my free time I code Minecraft mods and plugins in java. I like playing
+      around with new stuff to see what I can do with it.
+    </p>
+    <section>
+      <h2>Currently Playing:</h2>
+      <ul class="auto-grid">
+        <GameTile
+          image="/src/images/minecraft.webp"
+          title="Minecraft"
+          button={{
+            label: "Visit Minecraft Website",
+            href: "https://www.minecraft.net/",
+          }}
+        />
+        <GameTile
+          image="/src/images/roblox.webp"
+          title="Roblox"
+          button={{
+            label: "Sign up to Roblox",
+            href: "https://www.roblox.com/",
+          }}
+        />
+        <GameTile
+          image="/src/images/cooking-sim.webp"
+          title="Cooking Simulator"
+          button={{
+            label: "View on Steam",
+            href: "https://store.steampowered.com/app/641320/Cooking_Simulator/",
+          }}
+        />
+        <GameTile
+          image="/src/images/mini-motorways.webp"
+          title="Mini Motorways"
+          button={{
+            label: "View Game Page",
+            href: "https://dinopoloclub.com/games/mini-motorways/",
+          }}
+        />
+        <GameTile
+          image="/src/images/mini-metro.webp"
+          title="Mini Metro"
+          button={{
+            label: "View Game Page",
+            href: "https://dinopoloclub.com/games/mini-metro/",
+          }}
+        />
+      </ul>
+    </section>
+  </main>
+</Layout>
+
+<style></style>

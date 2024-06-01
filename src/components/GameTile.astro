@@ -1,0 +1,31 @@
+---
+interface Props {
+  image: string;
+  title: string;
+  button: {
+    label: string;
+    href: string;
+  };
+}
+
+const { image, title, button } = Astro.props;
+---
+
+<li class="tile">
+  <img src={image} alt="" />
+  <div class="tile__description">
+    <h3>{title}</h3>
+    <a href={button.href}>{button.label}</a>
+  </div>
+</li>
+<style>
+  .tile {
+    background-color: var(--tile-color);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .tile__description {
+    padding: 16px;
+  }
+</style>
