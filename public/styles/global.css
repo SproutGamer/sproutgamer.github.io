@@ -3,7 +3,6 @@ main {
   padding: 1rem;
   width: 800px;
   max-width: calc(100% - 2rem);
-  color: white;
   font-size: 20px;
   line-height: 1.6;
 }
@@ -41,6 +40,7 @@ body {
 
 a {
   background-color: blue;
+  border-radius: 8px;
   color: white;
   display: block;
   font-weight: 600;
@@ -79,11 +79,11 @@ img {
   list-style: none;
 }
 
-.color-toggle:checked + * > {
+/* .color-toggle:checked + * > {
   --page-color: #333;
   --text-color: #fff;
   --tile-color: #000;
-}
+} */
 
 .container {
   padding-inline: 5%;
@@ -98,6 +98,7 @@ img {
 .tile {
   background-color: var(--tile-color);
   border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 

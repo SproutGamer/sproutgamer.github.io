@@ -1,6 +1,6 @@
 ---
 interface Props {
-  image: string;
+  image: ImageMetadata;
   title: string;
   button: {
     label: string;
@@ -12,7 +12,7 @@ const { image, title, button } = Astro.props;
 ---
 
 <li class="tile">
-  <img src={image} alt="" />
+  <img src={image.src} alt="" />
   <div class="tile__description">
     <h3>{title}</h3>
     <a href={button.href}>{button.label}</a>

@@ -1,7 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import GameTile from "../components/GameTile.astro";
+
+import minecraftImage from "../../src/images/minecraft.webp";
+import robloxImage from "../../src/images/roblox.webp";
+import cookingSimImage from "../../src/images/cooking-sim.webp";
+import miniMotorwaysImage from "../../src/images/mini-motorways.webp";
+import miniMetroImage from "../../src/images/mini-metro.webp";
 ---
 
 <Layout title="SproutGamer - About Me">
@@ -17,7 +22,7 @@ import GameTile from "../components/GameTile.astro";
       <h2>Currently Playing:</h2>
       <ul class="auto-grid">
         <GameTile
-          image="src/images/minecraft.webp"
+          image={minecraftImage}
           title="Minecraft"
           button={{
             label: "Visit Minecraft Website",
@@ -25,7 +30,7 @@ import GameTile from "../components/GameTile.astro";
           }}
         />
         <GameTile
-          image="src/images/roblox.webp"
+          image={robloxImage}
           title="Roblox"
           button={{
             label: "Sign up to Roblox",
@@ -33,7 +38,7 @@ import GameTile from "../components/GameTile.astro";
           }}
         />
         <GameTile
-          image="src/images/cooking-sim.webp"
+          image={cookingSimImage}
           title="Cooking Simulator"
           button={{
             label: "View on Steam",
@@ -41,7 +46,7 @@ import GameTile from "../components/GameTile.astro";
           }}
         />
         <GameTile
-          image="src/images/mini-motorways.webp"
+          image={miniMotorwaysImage}
           title="Mini Motorways"
           button={{
             label: "View Game Page",
@@ -49,7 +54,7 @@ import GameTile from "../components/GameTile.astro";
           }}
         />
         <GameTile
-          image="src/images/mini-metro.webp"
+          image={miniMetroImage}
           title="Mini Metro"
           button={{
             label: "View Game Page",
