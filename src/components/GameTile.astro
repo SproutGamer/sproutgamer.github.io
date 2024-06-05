@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 interface Props {
   image: ImageMetadata;
   title: string;
@@ -12,20 +13,9 @@ const { image, title, button } = Astro.props;
 ---
 
 <li class="tile">
-  <img src={image.src} alt="" />
+  <Image src={image} alt="" width="320" height="240" />
   <div class="tile__description">
     <h3>{title}</h3>
     <a href={button.href}>{button.label}</a>
   </div>
 </li>
-<style>
-  .tile {
-    background-color: var(--tile-color);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .tile__description {
-    padding: 16px;
-  }
-</style>
