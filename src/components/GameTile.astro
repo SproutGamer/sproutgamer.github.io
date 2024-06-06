@@ -13,7 +13,7 @@ const { image, title, button } = Astro.props;
 ---
 
 <li class="tile">
-  <Image src={image} alt="" width="320" height="240" />
+  <img src={image.src} alt="" />
   <div class="tile__description">
     <h3>{title}</h3>
     <a href={button.href}>{button.label}</a>
